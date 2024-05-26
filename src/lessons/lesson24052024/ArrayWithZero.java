@@ -11,24 +11,6 @@ public class ArrayWithZero {
     }
 
     public static void sortArrayWithZero(int[] array) {
-//        int numOfZero = 0;
-//        int i = array.length - 1;
-//
-//        while (i >= 0)
-//        {
-//            if (array[i] == 0)
-//            {
-//                numOfZero = 1;
-//                System.out.println("Zero index " + i);
-//                for (int j = i; j < array.length - numOfZero; j++) {
-//                     array[j] = array[j+1];
-//                     array[j+1] = 0;
-//                }
-//            }
-//            i--;
-//        }
-
-        // Функция для перемещения нулей в конец массива
 
         int index = 0; // Индекс для ненулевых элементов
 
@@ -43,7 +25,6 @@ public class ArrayWithZero {
         while (index < array.length) {
             array[index++] = 0;
         }
-
     }
 
     public static int[] createArray() {
