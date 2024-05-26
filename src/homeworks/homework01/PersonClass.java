@@ -33,9 +33,11 @@ public class PersonClass {
 
         removePersonById(5);
 
+        removePerson(new Person("Имя3", 20));
         for (int i = 0; i < PERSON_NUMBER; i++) {
             printPersonById(i);
         }
+
     }
 
     public static void createPerson(String personName, int personAge){
@@ -92,6 +94,27 @@ public class PersonClass {
         names[index] = null;
         ages[index] = 0;
 
+    }
+
+    public static void removePerson(Person person){
+        int id = -1;
+        for (int i = 0; i < index-1; i++) {
+            if (person.getName().equals(names[i]) && person.getAge() == ages[i]) {
+                id = i;
+                break;
+            }
+        }
+        if (id != -1) {
+            for (int i = id; i < index - 1; i++) {
+                names[i] = names[i + 1];
+                ages[i] = ages[i + 1];
+            }
+        }
+
+        // Уменьшаем индекс массива и обнуляем данные в последней ячейке
+        index--;
+        names[index] = null;
+        ages[index] = 0;
     }
 
 }
