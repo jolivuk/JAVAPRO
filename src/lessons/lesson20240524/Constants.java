@@ -1,4 +1,4 @@
-package lessons.lesson24052024;
+package lessons.lesson20240524;
 
 public class Constants {
 

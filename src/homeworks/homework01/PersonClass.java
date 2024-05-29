@@ -2,8 +2,6 @@ package homeworks.homework01;
 
 import java.util.Random;
 
-import static lessons.lesson24052024.Constants.*;
-
 public class PersonClass {
     public static final int PERSON_NUMBER = 10;
     public static final int MIN_AGE = 10;

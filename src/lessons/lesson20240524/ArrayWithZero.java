@@ -1,9 +1,9 @@
-package lessons.lesson24052024;
+package lessons.lesson20240524;
 
 import java.util.Arrays;
 import java.util.Random;
 
-import static lessons.lesson24052024.Constants.*;
+import static lessons.lesson20240524.Constants.*;
 
 public class ArrayWithZero {
     public static void printArray(int[] array) {

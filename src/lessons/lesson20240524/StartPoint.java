@@ -1,6 +1,6 @@
-package lessons.lesson24052024;
+package lessons.lesson20240524;
 
-import static lessons.lesson24052024.ArrayWithZero.*;
+import static lessons.lesson20240524.ArrayWithZero.*;
 
 public class StartPoint {
 
