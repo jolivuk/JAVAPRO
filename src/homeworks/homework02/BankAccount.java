@@ -2,21 +2,17 @@ package homeworks.homework02;
 
 public class BankAccount {
 
-    private String owner;
+    private User owner;
     private double balance;
 
-    public BankAccount(String owner, double balance) {
+    public BankAccount(User owner, double balance) {
         this.owner = owner;
         this.balance = balance;
     }
 
-    public BankAccount(String owner) {
+    public BankAccount(User owner) {
         this.owner = owner;
         this.balance = 0;
-    }
-
-    public String getOwner() {
-        return owner;
     }
 
     public double getBalance() {
@@ -24,16 +20,38 @@ public class BankAccount {
     }
 
     public void deposit(double amount){
+        if (amount<=0)
+        {
+            System.out.println("You can not add negative amount");
+            return;
+        }
         this.balance+=amount;
     }
 
     public void withdraw(double amount){
+        if (amount < 0)
+        {
+            System.out.println("You can not withdraw negative amount");
+        }
+
+        if (this.balance - amount < 0)
+        {
+            System.out.println("Amount is not enough");
+            return;
+        }
+
         this.balance-=amount;
     }
-
+    public String getOwner(){
+        return owner.getFullName();
+    }
     public void printData()
     {
-        System.out.printf("Owner Name: %s\nBalance: %.2f\n\n",this.owner,this.balance);
+        System.out.printf("Owner Name: %s\nBalance: %.2f\n\n",this.getOwner(),this.balance);
+    }
+
+    public void addInterest(double rate){
+        this.balance += this.balance * rate;
     }
 
 }

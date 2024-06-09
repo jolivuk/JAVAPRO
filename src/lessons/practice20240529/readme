@@ -1,0 +1,26 @@
+Описание задачи
+Создать базовый класс Employee для представления общего сотрудника.
+Создать класс Manager, наследующийся от Employee, с дополнительными полями и методами.
+Создать класс Developer, наследующийся от Employee, с дополнительными полями и методами.
+Создать интерфейс EmployeeInterface для описания общих методов сотрудников.
+Реализовать массив сотрудников с различными типами (менеджеры и разработчики) и продемонстрировать полиморфное поведение при работе с этим массивом.
+Требования
+Интерфейсы и классы
+Интерфейс EmployeeInterface
+Методы:
+String getName()
+void setName(String name)
+String getPosition()
+void setPosition(String position)
+double getSalary()
+void setSalary(double salary)
+double calculateBonus()
+Класс Employee (реализует EmployeeInterface)
+Поля:
+name (String)
+position (String)
+salary (double)
+Конструктор для всех полей.
+Геттеры и сеттеры для каждого поля.
+Метод toString() для вывода базовой информации о сотруднике.
+Метод calculateBonus(), который возвращает 5% от зарплаты.
