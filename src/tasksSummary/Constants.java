@@ -1,4 +1,4 @@
-package tasksfromMichail;
+package tasksSummary;
 
 public class Constants {
     public static final int HEIGHT_MATRIX = 15;

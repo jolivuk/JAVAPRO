@@ -1,8 +1,8 @@
-package tasksfromMichail;
+package tasksSummary;
 
 import java.util.Arrays;
 
-import static tasksfromMichail.Constants.*;
+import static tasksSummary.Constants.*;
 
 public class MatrixFunctions {
     public static void printMatrix(int[][] matrix) {

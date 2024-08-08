@@ -1,6 +1,6 @@
-package tasksfromMichail;
+package tasksSummary;
 
-import static tasksfromMichail.MatrixFunctions.*;
+import static tasksSummary.MatrixFunctions.*;
 
 public class MatrixStart {
 
